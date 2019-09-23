@@ -7,27 +7,25 @@
  */
 public class Fraction
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Fraction
-     */
+    // fields
+    // syntax --> private dataType nameOfField
+    private int numVal;
+    private int denVal;
+    
+    // constructor(s)
+    // syntax --> public NameOfClass()
     public Fraction()
     {
-        // initialise instance variables
-        x = 0;
+        //gives initial values
+        numVal = 7;
+        denVal = 14;
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+    
+    // method(s)
+    // syntax --> public returnType nameOfMethod()
+    public double getDecimalValue()
     {
-        // put your code here
-        return x + y;
+        //to return a value --> return
+        return numVal/denVal;
     }
 }
