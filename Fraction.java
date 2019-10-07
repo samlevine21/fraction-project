@@ -26,6 +26,23 @@ public class Fraction
     public double getDecimalValue()
     {
         //to return a value --> return
-        return numVal/denVal;
+        return (double) numVal/denVal;
+    }
+    public void setNum(int newNum) {
+        numVal = newNum;
+    }
+    public void setDen(int newDen) {
+        denVal = newDen;
+    }
+    public int getNum() {
+        return numVal;
+    }
+    public int getDen() {
+        return denVal;
+    }
+    public void getFrac() {
+        System.out.print(numVal);
+        System.out.print("/");
+        System.out.println(denVal);
     }
 }
