@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Fraction here.
+ * Represents a fraction.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Sam Levine)
+ * @version (Date: 10/8/2019)
  */
 public class Fraction
 {
@@ -14,6 +14,9 @@ public class Fraction
     
     // constructor(s)
     // syntax --> public NameOfClass()
+    /**
+     * Creates a default fraction with numerator 7 and denominator 14.
+     */
     public Fraction()
     {
         //gives initial values
@@ -21,12 +24,18 @@ public class Fraction
         denVal = 14;
     }
     
+    public Fraction(int numIn, int denIn)
+    {
+        numVal = numIn;
+        denVal = denIn;
+    }
+    
     // method(s)
     // syntax --> public returnType nameOfMethod()
     public double getDecimalValue()
     {
         //to return a value --> return
-        return (double) numVal/denVal;
+        return (double) (getNum())/(getDen());
     }
     public void setNum(int newNum) {
         numVal = newNum;
@@ -40,7 +49,7 @@ public class Fraction
     public int getDen() {
         return denVal;
     }
-    public void getFrac() {
+    public void printFrac() {
         System.out.print(numVal);
         System.out.print("/");
         System.out.println(denVal);

@@ -20,5 +20,8 @@ public class TestOurFractionClass
         f.setNum(5);
         //now print it
         System.out.println(f.getNum());
+        
+        Fraction h = new Fraction(5,11);
+        h.setDen(13);
     }
 }
