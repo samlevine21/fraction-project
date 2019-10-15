@@ -49,9 +49,13 @@ public class Fraction
     public int getDen() {
         return denVal;
     }
-    public void printFrac() {
-        System.out.print(numVal);
-        System.out.print("/");
-        System.out.println(denVal);
+    /**
+     * Returns the string representation of this fraction
+     * in the form numerator/denominator.
+     * @return
+     */
+    @Override
+    public String toString() {
+        return numVal + "/" + denVal;
     }
 }
