@@ -26,7 +26,10 @@ public class TestOurFractionClass
     }
     public static void testMultiplyMethod() {
         Fraction f = new Fraction(4,5);
-        Fraction g = f.multiply(2);
-        System.out.print(g);
+        System.out.print(f.multiply(2));
+    }
+    public static void testDivideMethod() {
+        Fraction f = new Fraction(4,5);
+        System.out.print(f.divide(2));
     }
 }

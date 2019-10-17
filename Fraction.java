@@ -72,7 +72,8 @@ public class Fraction
      * @param num the number to divide this fraction by
      * @return the fraction divided by our integer input
      */
-    //public Fraction divide(int num){
-        
-    //}
+    public Fraction divide(int num){
+        Fraction result = new Fraction(numVal, denVal*num);
+        return result;
+    }
 }
