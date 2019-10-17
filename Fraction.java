@@ -58,4 +58,21 @@ public class Fraction
     public String toString() {
         return numVal + "/" + denVal;
     }
+    /**
+     * multiplies our fraction by an integer
+     * @param num the number to multiply this fraction by
+     * @return the fraction multiplied by our integer input
+     */
+    public Fraction multiply(int num){
+        Fraction result = new Fraction(numVal*num, denVal);
+        return result;
+    }
+    /**
+     * divides our fraction by an integer
+     * @param num the number to divide this fraction by
+     * @return the fraction divided by our integer input
+     */
+    //public Fraction divide(int num){
+        
+    //}
 }

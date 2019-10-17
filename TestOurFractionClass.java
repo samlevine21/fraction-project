@@ -24,4 +24,9 @@ public class TestOurFractionClass
         Fraction h = new Fraction(5,11);
         h.setDen(13);
     }
+    public static void testMultiplyMethod() {
+        Fraction f = new Fraction(4,5);
+        Fraction g = f.multiply(2);
+        System.out.print(g);
+    }
 }
